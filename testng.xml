@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/Iron Maiden/IdeaProjects/MyProject35/MyFinalProject/src/test/java/test">
+        <classes>
+            <class name="test.MainPageTest">
+                <methods>
+                    <include name="goToTestingCoursesPage"/>
+                    <include name="goToFreeEventsPage"/>
+                    <include name="checkSubscriptionForm"/>
+                    <include name="goToCorporateTrainingPage"/>
+                    <include name="goToPartnershipPage"/>
+                    <include name="goToBlogPage"/>
+                    <include name="checkConsultationFormOnMainPage"/>
+                    <include name="goToAllCoursesPage"/>
+                    <include name="goToJavaCoursesFromFooter"/>
+                    <include name="goToStudentsFeedbackFromFooter"/>
+                    <include name="goToYoutube"/>
+                    <include name="openCarrotquestMessenger"/>
+                </methods>
+            </class>
+            <class name="test.CoursesPageTest">
+                <methods>
+                    <include name="returnToTheMainPageByLogoClick"/>
+                    <include name="goToCareerCenter"/>
+                    <include name="checkFormForCallOnCoursesPage"/>
+                    <include name="chooseCourseFromLeftMenu"/>
+                    <include name="goToCoursesWithSeleniumWebDriverLearning"/>
+                    <include name="checkRegistrationFormForCourseQAJava"/>
+                </methods>
+            </class>
+            <class name="test.CareerCanterPageTest">
+                <methods>
+                    <include name="checkQuestionFormOnCareerCenterPage"/>
+                </methods>
+            </class>
+            <class name="test.ContactsPageTest">
+                <methods>
+                    <include name="checkQuestionFormFromContactsPage"/>
+                </methods>
+            </class>
+            <class name="test.FreeEventsTest">
+                <methods>
+                    <include name="checkRegistrationFormForFreeIntensives"/>
+                </methods>
+            </class>
+            <class name="test.GiftCertificatePageTest">
+                <methods>
+                    <include name="checkFAQOnGiftCertificatePage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
