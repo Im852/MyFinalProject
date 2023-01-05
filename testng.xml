@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="MyFinalProject">
+        <classes>
+            <class name="test.CareerCenterPageTest">
+                <methods>
+                    <include name="checkQuestionFormOnCareerCenterPageTest"/>
+                </methods>
+            </class>
+            <class name="test.ContactsPageTest">
+                <methods>
+                    <include name="checkQuestionFormFromContactsPageTest"/>
+                </methods>
+            </class>
+            <class name="test.CoursesPageTest">
+                <methods>
+                    <include name="returnToTheMainPageByLogoClickTest"/>
+                    <include name="goToCareerCenterTest"/>
+                    <include name="checkFormForCallOnCoursesPageTest"/>
+                    <include name="chooseCourseFromLeftMenuTest"/>
+                    <include name="goToCoursesWithSeleniumWebDriverLearningTest"/>
+                    <include name="checkRegistrationFormForCourseQAJavaTest"/>
+                </methods>
+            </class>
+            <class name="test.FreeEventsTest">
+                <methods>
+                    <include name="checkRegistrationFormForFreeIntensivesTest"/>
+                </methods>
+            </class>
+            <class name="test.GiftCertificatePageTest">
+                <methods>
+                    <include name="checkFAQOnGiftCertificatePage"/>
+                </methods>
+            </class>
+            <class name="test.MainPageTest">
+                <methods>
+                    <include name="goToTestingCoursesPageTest"/>
+                    <include name="goToFreeEventsPageTest"/>
+                    <include name="checkSubscriptionFormTest"/>
+                    <include name="goToCorporateTrainingPageTest"/>
+                    <include name="goToPartnershipPageTest"/>
+                    <include name="goToBlogPage"/>
+                    <include name="checkConsultationFormOnMainPage"/>
+                    <include name="goToAllCoursesPageTest"/>
+                    <include name="goToJavaCoursesFromFooterTest"/>
+                    <include name="goToStudentsFeedbackFromFooterTest"/>
+                    <include name="goToYoutubeTest"/>
+                    <include name="openCarrotQuestMessengerTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
