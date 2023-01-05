@@ -47,7 +47,7 @@ public class MainPageTest extends MainClass { //Главная страница 
     }
 
     @Test(description = "#6 Переход к странице 'Блог' из хэдера главной страницы")
-    public void goToBlogPage() {
+    public void goToBlogPageTest() {
         MainPage mainPage = new MainPage(driver);
         mainPage.goToBlogPage();
         String actualTitle = driver.getTitle();
@@ -55,7 +55,7 @@ public class MainPageTest extends MainClass { //Главная страница 
     }
 
     @Test(description = "#7 Проверка формы для получения консультации на главной странице")
-    public void checkConsultationFormOnMainPage() {
+    public void checkConsultationFormOnMainPageTest() {
         MainPage mainPage = new MainPage(driver);
         String actualMessage = mainPage.getValidationMessageFromConsultationFormOnMainPage();
         Assert.assertEquals(actualMessage, "Пожалуйста, заполните все обязательные поля\n" + "Укажите, пожалуйста, корректный email");
